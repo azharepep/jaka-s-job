@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px; /* Adjust the width as needed */
+    border: 2px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.item {
+    background-color: #030303;
+    margin: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    flex: 1 0 25%; /* Adjust the basis percentage to change the size */
+}
+
+.item:nth-child(3n+1) {
+    background-color: #000000;
+}
+
+.item:nth-child(3n+2) {
+    background-color: #b90f0f;
+}
+
+.item:nth-child(3n+3) {
+    background-color: #ff66d9fd;
+}
